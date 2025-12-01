@@ -1,0 +1,51 @@
+/* styles.css for Question 7 – Precise Control with the Position Property */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* Fixed navigation bar at the very top */
+.top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #1f6feb;
+  color: #ffffff;
+  padding: 10px 20px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Sticky header sits below the fixed nav and sticks there on scroll */
+.sticky-header {
+  position: sticky;
+  top: 48px;              /* height of the fixed nav */
+  background: #f4f6f8;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+  margin-top: 48px;       /* push content below the nav */
+  z-index: 500;
+}
+
+/* Main content area */
+.content {
+  padding: 20px;
+}
+
+/* "Back to Top" button fixed at bottom-right */
+.back-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 20px;
+  background: #1f6feb;
+  color: #ffffff;
+  cursor: pointer;
+  z-index: 1000;
+}
