@@ -1,0 +1,32 @@
+/* styles.css for Question 4 – Typography & Text Styling */
+
+body {
+  background: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  font-family: 'Merriweather', serif;
+}
+
+article {
+  max-width: 720px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 6px;
+}
+
+article h1 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+/* Improve readability of all paragraphs */
+article p {
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  text-align: justify;
+  color: #333333;
+  text-shadow: 0 1px 0 #ffffff;
+  margin-bottom: 12px;
+}
