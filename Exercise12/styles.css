@@ -1,0 +1,50 @@
+/* styles.css for Question 12 – Implementing a Mobile-First Responsive Design */
+
+/* Base = mobile first (phones) */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;          /* smaller base font on mobile */
+  background: #f5f5f5;
+  padding: 10px;
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Single column grid for mobile */
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr; /* one column */
+  gap: 10px;
+}
+
+.box {
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+/* Tablet and up (progressive enhancement) */
+@media (min-width: 600px) {
+  body {
+    font-size: 1rem;          /* slightly larger text */
+  }
+
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr); /* two columns */
+  }
+}
+
+/* Desktop and up */
+@media (min-width: 900px) {
+  body {
+    font-size: 1.1rem;        /* even larger text for big screens */
+  }
+
+  .wrapper {
+    grid-template-columns: repeat(3, 1fr); /* three columns */
+  }
+}
