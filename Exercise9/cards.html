@@ -1,0 +1,54 @@
+<!--
+  ==============================
+  Question 9 – Building a Responsive Card Layout with Flexbox
+  ==============================
+
+  Scenario:
+    A product page needs a row of feature cards that wrap onto new lines
+    on smaller screens.
+
+  Task:
+    In cards.html:
+      - Create a <div> with the class .cards containing several .card items.
+    In styles.css:
+      - Use Flexbox so the cards:
+          • Arrange in a row.
+          • Wrap onto new lines when there isn't enough space.
+          • Have equal height.
+      - On mobile, make the cards stack vertically using a media query.
+
+  Concepts to Use:
+    • display: flex, flex-wrap
+    • flex property on items
+    • Media Queries (@media)
+    • flex-direction: column
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Feature Cards</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="cards">
+    <div class="card">
+      <h2>Fast Sharing</h2>
+      <p>Upload notes and resources in seconds and share them with classmates.</p>
+    </div>
+    <div class="card">
+      <h2>Smart Search</h2>
+      <p>Find content by course, semester, or tags using a powerful search.</p>
+    </div>
+    <div class="card">
+      <h2>Collaboration</h2>
+      <p>Request collaborations and work together on projects in real-time.</p>
+    </div>
+    <div class="card">
+      <h2>Progress Tracking</h2>
+      <p>See your history score and track how often you support others.</p>
+    </div>
+  </div>
+</body>
+</html>
