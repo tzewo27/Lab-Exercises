@@ -1,0 +1,41 @@
+/* styles.css for Question 5 – Creating a Hero Section with Backgrounds */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Hero section */
+.hero {
+  /* background image + dark gradient overlay */
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("https://picsum.photos/1600/800?blur=2") center/cover no-repeat;
+
+  color: #ffffff;
+  text-align: center;
+  padding: 140px 20px;        /* make it tall */
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+/* Simple hero button */
+.hero button {
+  padding: 10px 22px;
+  border-radius: 6px;
+  border: none;
+  background: #1f6feb;
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+}
