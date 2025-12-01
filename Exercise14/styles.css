@@ -1,0 +1,38 @@
+/* styles.css for Question 14 – Creating a Dynamic Theme with CSS Variables */
+
+/* Light mode variables (default) */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #222222;
+  --accent-color: #1f6feb;
+}
+
+/* Base styles using CSS variables */
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+h1 {
+  margin-top: 10px;
+}
+
+/* Button uses accent color */
+button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background: var(--accent-color);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Dark mode: override the variables */
+body.dark-mode {
+  --bg-color: #121212;
+  --text-color: #f5f5f5;
+  --accent-color: #ffb703;
+}
