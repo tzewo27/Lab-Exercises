@@ -1,0 +1,40 @@
+/* styles.css for Question 9 – Building a Responsive Card Layout with Flexbox */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+
+/* Flex container for cards */
+.cards {
+  display: flex;
+  flex-wrap: wrap;           /* allow wrapping onto new lines */
+  gap: 16px;
+  padding: 20px;
+}
+
+/* Individual card; flex: 1 1 220px enforces equal height and base width */
+.card {
+  flex: 1 1 220px;           /* grow, shrink, base width */
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 16px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;    /* make content stack inside */
+}
+
+/* Ensure titles stand out slightly */
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+/* On small screens, stack cards vertically */
+@media (max-width: 600px) {
+  .cards {
+    flex-direction: column;  /* stack entire cards in a column */
+  }
+}
