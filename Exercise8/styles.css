@@ -1,0 +1,48 @@
+/* styles.css for Question 8 – Creating a Navigation Bar with Flexbox */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Flexbox navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;  /* logo left, menu right */
+  align-items: center;             /* vertically center items */
+  padding: 10px 20px;
+  background: #1f6feb;
+  color: #ffffff;
+}
+
+/* Logo styling */
+.logo {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+/* Menu links */
+.menu a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 0.95rem;
+}
+
+/* Responsive behavior: stack on mobile */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;        /* stack logo and menu */
+    align-items: flex-start;
+  }
+
+  .menu {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;        /* stack links vertically */
+  }
+
+  .menu a {
+    margin: 4px 0;                 /* space between vertical links */
+  }
+}
