@@ -1,0 +1,53 @@
+<!--
+  ==============================
+  Question 6 – Building a Simple Layout with Floats
+  ==============================
+
+  Scenario:
+    An old-school news site uses a float-based layout for its article sidebar.
+
+  Task:
+    Create a two-column layout in news.html:
+      - Float a .sidebar <div> to the left.
+      - Float a .main-content <div> to the right.
+      - Use the clear property on the footer so it sits below both columns.
+      - Fix the "collapsed container" problem so the parent wraps both floats.
+
+  Concepts to Use:
+    • float: left, float: right
+    • clear: both
+    • Fixing collapsed container (e.g., overflow or clearfix)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>News Layout with Floats</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="layout">
+    <div class="sidebar">
+      <h2>Sidebar</h2>
+      <p>Links, categories, and other related articles appear here.</p>
+    </div>
+
+    <div class="main-content">
+      <h1>Main Article Title</h1>
+      <p>
+        This is the main article area. The layout uses classic CSS floats:
+        the sidebar is floated left, and this main content is floated right.
+      </p>
+      <p>
+        Floats were widely used before Flexbox and Grid. We also need to clear
+        the footer so it appears below both columns.
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    © 2024 Student News – All rights reserved.
+  </footer>
+</body>
+</html>
