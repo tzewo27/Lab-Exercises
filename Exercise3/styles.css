@@ -1,0 +1,55 @@
+/* styles.css for Question 3 – Advanced Selectors Challenge */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Remove default list styles */
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Direct children of nav (li elements) have a border */
+.main-nav > ul > li {
+  display: inline-block;
+  border-right: 1px solid #ccc;
+}
+
+/* Remove border on the last item */
+.main-nav > ul > li:last-child {
+  border-right: none;
+}
+
+/* Base link style */
+.main-nav a {
+  display: inline-block;
+  padding: 10px 16px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* First menu item is bold */
+.main-nav li:first-child a {
+  font-weight: bold;
+}
+
+/* Links change color on hover */
+.main-nav a:hover {
+  color: #1f6feb;
+}
+
+/* Active page link has a different background */
+.main-nav a.active {
+  background-color: #1f6feb;
+  color: #ffffff;
+}
+
+/* Attribute selector example:
+   style any link with data-special="true" */
+.main-nav a[data-special="true"] {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
