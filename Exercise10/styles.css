@@ -1,0 +1,58 @@
+/* styles.css for Question 10 – Designing a Dashboard with CSS Grid */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Grid container */
+.dashboard {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  grid-template-columns: 220px 1fr;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+/* Header area */
+header {
+  grid-area: header;
+  background: #1f6feb;
+  color: #ffffff;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+}
+
+/* Sidebar area */
+aside {
+  grid-area: sidebar;
+  background: #f4f6f8;
+  padding: 15px;
+}
+
+aside ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+aside li {
+  margin-bottom: 6px;
+}
+
+/* Main content area */
+main {
+  grid-area: main;
+  padding: 20px;
+}
+
+/* Footer area */
+footer {
+  grid-area: footer;
+  background: #111111;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+}
