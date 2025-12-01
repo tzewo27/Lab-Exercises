@@ -1,0 +1,51 @@
+<!--
+  ==============================
+  Question 10 – Designing a Dashboard with CSS Grid
+  ==============================
+
+  Scenario:
+    An admin dashboard needs a classic header, sidebar, main content,
+    and footer layout.
+
+  Task:
+    In dashboard.html:
+      - Create a container <div> that wraps:
+          <header>, <aside>, <main>, and <footer>.
+      - Use CSS Grid in styles.css to define the layout using grid-template-areas.
+
+  Concepts to Use:
+    • display: grid
+    • grid-template-areas
+    • grid-template-columns
+    • grid-template-rows
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard Layout</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="dashboard">
+    <header>Admin Dashboard</header>
+    <aside>
+      <h3>Navigation</h3>
+      <ul>
+        <li>Overview</li>
+        <li>Users</li>
+        <li>Content</li>
+        <li>Reports</li>
+        <li>Settings</li>
+      </ul>
+    </aside>
+    <main>
+      <h2>Overview</h2>
+      <p>This area represents the main content of the admin dashboard.</p>
+      <p>Use it to show charts, tables, and key statistics.</p>
+    </main>
+    <footer>© 2024 Admin Panel</footer>
+  </div>
+</body>
+</html>
