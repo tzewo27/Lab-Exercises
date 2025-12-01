@@ -1,0 +1,44 @@
+<!--
+  ==============================
+  Question 8 – Creating a Navigation Bar with Flexbox
+  ==============================
+
+  Scenario:
+    A modern web app needs a flexible navigation bar where the logo is on the left
+    and the menu links are on the right.
+
+  Task:
+    In navbar.html:
+      - Create a <nav> with a .logo div and a .menu div containing several links.
+    In styles.css:
+      - Use Flexbox to:
+          • Space the logo and the menu apart (logo left, menu right) on larger screens.
+          • Align items vertically centered.
+          • Make the navigation responsive so it stacks on mobile.
+
+  Concepts to Use:
+    • display: flex
+    • justify-content: space-between
+    • align-items: center
+    • Media queries with flexbox
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox Navigation Bar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">MyApp</div>
+    <div class="menu">
+      <a href="#">Home</a>
+      <a href="#">Features</a>
+      <a href="#">Pricing</a>
+      <a href="#">Contact</a>
+    </div>
+  </nav>
+</body>
+</html>
