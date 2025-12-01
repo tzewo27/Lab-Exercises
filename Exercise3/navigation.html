@@ -1,0 +1,42 @@
+<!--
+  ==============================
+  Question 3 – Advanced Selectors Challenge
+  ==============================
+
+  Scenario:
+    A complex navigation menu needs specific styling for different states
+    and relationships between elements.
+
+  Task:
+    Style a navigation menu where:
+      - The first menu item is bold.
+      - Links change color when hovered.
+      - The active page link has a different background.
+      - Menu items that are direct children of the <nav> have a border.
+
+  Concepts to Use:
+    • Child selector (>)
+    • :first-child pseudo-class
+    • :hover pseudo-class
+    • Attribute selectors
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced Navigation Menu</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="main-nav">
+    <ul>
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#about">About</a></li>
+      <!-- attribute selector example -->
+      <li><a href="#contact" data-special="true">Contact</a></li>
+    </ul>
+  </nav>
+</body>
+</html>
