@@ -1,0 +1,60 @@
+<!--
+  Question 1 – Applying CSS: Inline, Internal, and External
+  ==============================
+  Scenario:
+    You are cleaning up a legacy company website where styles are mixed within the HTML.
+
+  Task:
+    Create an HTML file named company.html.
+    - Style one paragraph using inline CSS.
+    - Style another paragraph using internal CSS.
+    - Link an external CSS file (styles.css) to style:
+        • the page's background
+        • a <div> element.
+
+  Concepts to Use:
+    • Inline CSS (style attribute)
+    • Internal CSS (<style> tag in <head>)
+    • External CSS (linking styles.css)
+    • Basic selectors (element, class)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Company Page</title>
+
+  <!-- Internal CSS -->
+  <style>
+    /* Paragraph styled with INTERNAL CSS */
+    .internal-text {
+      color: darkgreen;
+      font-style: italic;
+      font-size: 18px;
+    }
+  </style>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Welcome to Our Company</h1>
+
+  <!-- Paragraph with INLINE CSS -->
+  <p style="color: blue; font-weight: bold; font-size: 18px;">
+    This paragraph is styled using <strong>inline CSS</strong>.
+  </p>
+
+  <!-- Paragraph with INTERNAL CSS (class defined in <style> above) -->
+  <p class="internal-text">
+    This paragraph is styled using <strong>internal CSS</strong>.
+  </p>
+
+  <!-- Div styled by EXTERNAL CSS (see styles.css) -->
+  <div class="info-box">
+    This box and the page background are styled using an
+    <strong>external CSS</strong> file.
+  </div>
+</body>
+</html>
