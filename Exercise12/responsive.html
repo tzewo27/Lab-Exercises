@@ -1,0 +1,43 @@
+<!--
+  ==============================
+  Question 12 – Implementing a Mobile-First Responsive Design
+  ==============================
+
+  Scenario:
+    Your client insists their site looks perfect on mobile phones first,
+    then adapts to tablets and desktops.
+
+  Task:
+    In responsive.html and styles.css:
+      - Style a simple page for mobile first:
+          • single column layout
+          • smaller fonts
+      - Then use min-width media queries to:
+          • change the layout to two columns for tablets
+          • change to three columns for desktops
+          • increase font sizes on larger screens.
+
+  Concepts to Use:
+    • Mobile-first approach
+    • Media Queries with min-width
+    • Responsive units (%, rem, vw)
+    • Progressive enhancement
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mobile-First Layout</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 class="page-title">Responsive Cards</h1>
+
+  <div class="wrapper">
+    <div class="box">Item 1 – This layout is optimized for mobile first.</div>
+    <div class="box">Item 2 – On tablets, two columns will appear.</div>
+    <div class="box">Item 3 – On desktops, three columns will appear.</div>
+  </div>
+</body>
+</html>
