@@ -1,0 +1,42 @@
+<!--
+  ==============================
+  Question 11 – Making a Responsive Gallery with CSS Grid
+  ==============================
+
+  Scenario:
+    A photographer’s portfolio site needs a responsive gallery that
+    automatically adjusts the number of columns based on screen size.
+
+  Task:
+    In gallery.html:
+      - Create a <div> with the class .gallery containing multiple <img> elements.
+
+    In styles.css:
+      - Use CSS Grid with grid-template-columns, repeat(), and minmax()
+        to create a fully responsive gallery that works on all devices.
+
+  Concepts to Use:
+    • grid-template-columns: repeat(auto-fit, minmax(...))
+    • gap
+    • Responsive units
+    • object-fit: cover for images
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Photo Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="gallery">
+    <img src="https://picsum.photos/400/300?1" alt="Photo 1">
+    <img src="https://picsum.photos/400/300?2" alt="Photo 2">
+    <img src="https://picsum.photos/400/300?3" alt="Photo 3">
+    <img src="https://picsum.photos/400/300?4" alt="Photo 4">
+    <img src="https://picsum.photos/400/300?5" alt="Photo 5">
+    <img src="https://picsum.photos/400/300?6" alt="Photo 6">
+  </div>
+</body>
+</html>
