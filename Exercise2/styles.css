@@ -1,0 +1,20 @@
+/* styles.css for Question 2 – Mastering the Box Model */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+
+/* The profile card demonstrates the box model */
+.profile-card {
+  box-sizing: border-box;     /* include padding & border in width/height */
+  width: 320px;               /* fixed width */
+  padding: 20px;              /* space inside the border */
+  border: 2px solid #1f6feb;  /* clean border */
+  margin: 60px auto;          /* top/bottom 60px, center horizontally */
+  background: #ffffff;
+  border-radius: 8px;
+  text-align: center;
+}
