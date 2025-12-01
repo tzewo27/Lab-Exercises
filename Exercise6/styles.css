@@ -1,0 +1,39 @@
+/* styles.css for Question 6 – Building a Simple Layout with Floats */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Parent container; overflow:auto fixes collapsed container around floats */
+.layout {
+  overflow: auto;
+  padding: 10px;
+}
+
+/* Sidebar floated left */
+.sidebar {
+  float: left;
+  width: 30%;
+  background: #f0f0f0;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Main content floated right */
+.main-content {
+  float: right;
+  width: 70%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Footer must sit below both floated columns */
+footer {
+  clear: both;
+  background: #1f6feb;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+}
