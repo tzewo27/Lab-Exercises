@@ -1,0 +1,55 @@
+<!--
+  ==============================
+  Question 7 – Precise Control with the Position Property
+  ==============================
+
+  Scenario:
+    A website needs a navigation bar that stays at the top of the viewport
+    and a "Back to Top" button fixed at the bottom-right.
+
+  Task:
+    In layout.html:
+      - Create a <nav> and position it fixed to the top.
+      - Create a <button> and position it fixed to the bottom-right corner.
+      - Add a sticky header that becomes fixed after scrolling.
+
+  Concepts to Use:
+    • position: fixed, position: sticky
+    • top, right, bottom, left
+    • z-index
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Position Property Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+  <nav class="top-nav">
+    <span class="logo">My Site</span>
+    <span class="nav-links">Home · Articles · Contact</span>
+  </nav>
+
+  <header class="sticky-header">
+    Sticky Section Header – I stick below the fixed nav when you scroll.
+  </header>
+
+  <main class="content">
+    <p>Scroll down to see how the sticky header behaves and how the "Back to Top" button stays fixed.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non libero vel justo tristique cursus...</p>
+    <p>More filler text to make the page scroll. Copy this paragraph many times if needed.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non libero vel justo tristique cursus...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non libero vel justo tristique cursus...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non libero vel justo tristique cursus...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non libero vel justo tristique cursus...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non libero vel justo tristique cursus...</p>
+  </main>
+
+  <button class="back-to-top"
+          onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+    ↑ Top
+  </button>
+</body>
+</html>
